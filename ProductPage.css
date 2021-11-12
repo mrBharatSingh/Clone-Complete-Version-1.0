@@ -16,6 +16,7 @@
 #imgDiv:hover {
   transform: scale(1.05);
   transition: 300ms;
+  z-index: -1;
 }
 body {
   background-color: rgb(236, 236, 236);
