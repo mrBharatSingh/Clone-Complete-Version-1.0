@@ -2,15 +2,11 @@ var span =document.getElementById("third").addEventListener("click",myFnct)
 var plus = document.getElementById("plus")
 var sub = document.getElementById("sub")
 var category = document.getElementById("box")
-
 var category2 = document.getElementById("box2")
 var category3 = document.getElementById("box3")
 var category1 = document.getElementById("box1")
 var count = 0;
-
 function myFnct(){
-
-    console.log("djdjjdjd")
 count++
 if(count%2==1){
     plus.style.display="none"
@@ -28,11 +24,8 @@ if(count%2==1){
     category2.style.display="none";
     category3.style.display="none";
     category1.style.display="none";
-
 }
 }
-
-
 var brand=document.getElementById("fourth").addEventListener("click",showData)
 var BrandPlus = document.getElementById("BrandPlus")
 var BrandSum = document.getElementById("BrandSum")
@@ -41,7 +34,6 @@ var brand1 = document.getElementById("dox1")
 var brand2 = document.getElementById("dox2")
 var brand3 = document.getElementById("dox3")
 var count = 0;
-
 function showData(){
 count++
 if(count%2==1){
@@ -58,20 +50,16 @@ if(count%2==1){
    brand1.style.display="none";
     brand2.style.display="none";
     brand3.style.display="none";
-
 }
 }
-
 var price =document.getElementById("fifth").addEventListener("click",Price)
 var PricePlus = document.getElementById("PricePlus")
 var PriceSub = document.getElementById("PriceSub")
-
 var price= document.getElementById("Fox")
 var price1 = document.getElementById("Fox1")
 var price2 = document.getElementById("Fox2")
 var price3 = document.getElementById("Fox3")
 var count = 0;
-
 function Price(){
 count++
 if(count%2==1){
@@ -88,7 +76,6 @@ if(count%2==1){
     price1.style.display="none";
     price2.style.display="none";
     price3.style.display="none";
-
 }
 }
 var discount =document.getElementById("sixth").addEventListener("click",Discount)
@@ -99,7 +86,6 @@ var dicount1 = document.getElementById("jox1")
 var dicount2 = document.getElementById("jox2")
 var dicount3 = document.getElementById("jox3")
 var count = 0;
-
 function Discount(){
 count++
 if(count%2==1){
@@ -116,14 +102,8 @@ if(count%2==1){
     dicount1.style.display="none";
     dicount2.style.display="none";
     dicount3.style.display="none";
-
 }
 }
-
-
-
-
-
 var data = [
 {
     img_url:"https://img.tatacliq.com/images/i7/437Wx649H/MP000000009068833_437Wx649H_202103132244211.jpeg",
@@ -267,14 +247,10 @@ var data = [
     rating:"3",
 },
 ]
-
 localStorage.setItem("data",JSON.stringify(data))
 var data2=JSON.parse(localStorage.getItem("data"))
 var Scnd = document.getElementById("Scnd")
 var maindiv=document.createElement("div")
-
-
-
 maindiv.setAttribute("id","container")
 // var count=0
 // var links=["P1.html","P2.html","P3.html","P4.html","P5.html","P6.html","P7.html","P8.html","P9.html","P10.html","P11.html","P12.html"
@@ -282,46 +258,30 @@ maindiv.setAttribute("id","container")
 displayitem(data2)
 function displayitem(data2) {
 data2.map(function(item) {
-
 var a=document.createElement("div")
 a.setAttribute("id","dic")
-
 var img=document.createElement("img")
 img.setAttribute("src",item.img_url);
 img.setAttribute("id","imgDiv")
-
 var h2=document.createElement("h2")
 h2.textContent=item.type
-
 var h3=document.createElement("p")
 h3.textContent=item.name
-
 var price=document.createElement("p")
 price.textContent=item.price
-
 // var discount=document.createElement("div")
 // discount.setAttribute("class","discount")
-
 var ratings=item.rating
 var btn=document.createElement("button")
-btn.setAttribute("id","rating")
 var ii=document.createElement("i")
 ii.setAttribute("class","material-icons")
 ii.innerHTML="&#xe83a"
-
 btn.append(ratings,ii)
-
-
-
 var links=item.link
-
 document.querySelector("body").append(maindiv);
 maindiv.append(a);
 Scnd.append(maindiv);
 a.append(img,h2,h3,price,btn);
-
-
-
 img.addEventListener("click",specificproduct)
 // console.log(links)
 function specificproduct() {
@@ -329,31 +289,21 @@ function specificproduct() {
     window.location.href=links
     }
     // count++
-
 })
 }
-
-
-
-
 //   Sorting all kinds here
 function pricesort() {
     
-
     //     //   Keeping parent div empty
     document.getElementById("container").textContent="";
-
-
     var selected=document.getElementById("sorting").value
     console.log(selected)
-
         //   Sorting price Low to high
         if(selected==="Price Low to High") {
             data2=data2.sort(function(a,b){
                 var d=a.price.split("")
                 d.shift()
                 var final_a=d.join("")
-
                 var e=b.price.split("")
                 e.shift()
                 var final_b=e.join("")
@@ -370,7 +320,6 @@ function pricesort() {
             var d=a.price.split("")
             d.shift()
             var final_a=d.join("")
-
             var e=b.price.split("")
             e.shift()
             var final_b=e.join("")
@@ -398,37 +347,9 @@ function pricesort() {
         displayitem(data2)
     
     }
-
-    
-
     
     
-
-
-
+    
       
-
-
-
-
-
         
 //     }
-
-
-    
-
-    
-    
-
-
-
-      
-
-
-
-
-
-        
-//     }
-
