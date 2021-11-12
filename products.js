@@ -330,5 +330,5 @@ document.getElementById("nav2ContentImg1").addEventListener("click",function(){
 
 // Home
 document.getElementById("nav2logo").addEventListener("click",function(){
-  window.location.href="Index.html"
+  window.location.href="index.html"
 })

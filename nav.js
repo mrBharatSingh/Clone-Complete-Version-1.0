@@ -306,7 +306,7 @@ window.addEventListener('load', (event) => {
 
 // Home
 document.getElementById("logo").addEventListener("click",function(){
-window.location.href="Index.html"
+window.location.href="index.html"
 })
 
 
