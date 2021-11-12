@@ -11,6 +11,7 @@
   height: 280px;
   width: 200px;
   cursor: pointer;
+  z-index: -1;
 }
 #imgDiv:hover {
   transform: scale(1.05);
@@ -27,9 +28,8 @@ p {
   line-height: 25px;
   font-weight: normal;
 }
-
 .discount {
-  position: absolute;
+  /* position: absolute; */
   bottom: 20px;
   right: 20px;
   background-color: black;
@@ -37,7 +37,6 @@ p {
   padding-left: 20px;
   padding-right: 20px;
 }
-
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
@@ -51,7 +50,6 @@ p {
     word-wrap: normal;
     direction: ltr */
 }
-
 #rating {
   display: flex;
   width: 40px;
@@ -64,12 +62,10 @@ p {
   color: white;
   font-weight: 500;
 }
-
 i {
   margin: 5px;
   vertical-align: bottom;
 }
-
 hr {
   width: 90%;
   margin: auto;
@@ -96,23 +92,36 @@ hr {
   font-size: 15px;
   line-height: 50px;
 }
-
-#first {
-  border-radius: 5px;
+/* #first {
+  /* border-radius: 5px;
   display: inline-block;
   margin-right: 60px;
   position: sticky;
   top: 10%;
   margin-left: 10%;
   z-index: -1;
-  /* border:1px solid gray;   */
-}
+  border:2px solid red;  
+  width:200px */
+/* display: flex;
+  justify-content: space-between;
+  z-index: -1;
+  flex-direction: column; */
+/* } */
 #flex {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  display: inline-block;
+  /* flex-direction: column; */
   border: 1px solid gray;
+  position: sticky;
+  top: 11%;
+  margin-right: 30px;
+  margin-left: 100px;
+  z-index: -1;
+  /* margin-right: 60px;
+  position: sticky;
+  top: 10%;
+  margin-left: 10%; */
 }
-
 #Scnd {
   display: inline-block;
   /* border:1px solid red; */
@@ -121,7 +130,6 @@ hr {
   border-radius: 10px;
   vertical-align: top;
 }
-
 #filter {
   display: flex;
   width: 90%;
@@ -163,9 +171,8 @@ hr {
   border-radius: 30px;
   margin-bottom: 11px;
 }
-
 #box,
-#box1,
+#box11,
 #box2,
 #box3 {
   display: none;
@@ -180,7 +187,7 @@ hr {
   font-size: 15px;
   margin-left: 30px;
   display: inline-block;
-  margin-right: 150px;
+  margin-right: 140px;
 }
 #plus {
   display: inline-block;
@@ -201,8 +208,7 @@ hr {
   background-color: gainsboro;
   border: none;
 }
-
-#select {
+#selectsorting {
   float: right;
   display: flex;
   justify-content: space-between;
@@ -212,11 +218,10 @@ hr {
   align-items: center;
   margin-right: 87px;
 }
-#select > p {
+#selectsorting > p {
   width: 70px;
   padding-left: 10px;
 }
-
 #dox,
 #dox1,
 #dox2,
@@ -233,7 +238,7 @@ hr {
   font-size: 15px;
   margin-left: 30px;
   display: inline-block;
-  margin-right: 172px;
+  margin-right: 160px;
 }
 #BrandPlus {
   display: inline-block;
@@ -261,9 +266,8 @@ hr {
   font-size: 15px;
   margin-left: 30px;
   display: inline-block;
-  margin-right: 180px;
+  margin-right: 165px;
 }
-
 #PricePlus {
   display: inline-block;
   height: 15px;
@@ -274,7 +278,6 @@ hr {
   height: 15px;
   width: 15px;
 }
-
 #jox,
 #jox1,
 #jox2,
@@ -291,7 +294,7 @@ hr {
   font-size: 15px;
   margin-left: 30px;
   display: inline-block;
-  margin-right: 153px;
+  margin-right: 145px;
   /* margin-top: 10px; */
 }
 #DiscountPlus {
@@ -304,7 +307,6 @@ hr {
   height: 15px;
   width: 15px;
 }
-
 /* #hr{
         margin-top: 10px;
     } */
@@ -317,12 +319,10 @@ hr {
 #size > p {
   margin-top: 0%;
 }
-
 .samePlus {
   height: 15px;
   width: 15px;
 }
-
 #Fastening {
   margin-left: 30px;
   display: flex;
@@ -332,7 +332,6 @@ hr {
 #Fastening > p {
   margin-top: 0%;
 }
-
 #HeelHeight {
   margin-left: 30px;
   display: flex;
@@ -342,7 +341,6 @@ hr {
 #HeelHeight > p {
   margin-top: 0%;
 }
-
 #HeelType {
   margin-left: 30px;
   display: flex;
@@ -352,7 +350,6 @@ hr {
 #HeelType > p {
   margin-top: 0%;
 }
-
 #SoleMaterial {
   margin-left: 30px;
   display: flex;
@@ -362,7 +359,6 @@ hr {
 #SoleMaterial > p {
   margin-top: 0%;
 }
-
 #TipSize {
   margin-left: 30px;
   display: flex;

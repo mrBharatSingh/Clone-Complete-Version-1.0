@@ -4,9 +4,10 @@ var sub = document.getElementById("sub")
 var category = document.getElementById("box")
 var category2 = document.getElementById("box2")
 var category3 = document.getElementById("box3")
-var category1 = document.getElementById("box1")
+var category1 = document.getElementById("box11")
 var count = 0;
 function myFnct(){
+    console.log("djdjjdjd")
 count++
 if(count%2==1){
     plus.style.display="none"
@@ -273,6 +274,7 @@ price.textContent=item.price
 // discount.setAttribute("class","discount")
 var ratings=item.rating
 var btn=document.createElement("button")
+btn.setAttribute("id","rating")
 var ii=document.createElement("i")
 ii.setAttribute("class","material-icons")
 ii.innerHTML="&#xe83a"
@@ -347,6 +349,12 @@ function pricesort() {
         displayitem(data2)
     
     }
+    
+    
+    
+      
+        
+//     }
     
     
     
