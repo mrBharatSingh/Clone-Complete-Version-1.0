@@ -9,6 +9,8 @@ var category1 = document.getElementById("box1")
 var count = 0;
 
 function myFnct(){
+
+    console.log("djdjjdjd")
 count++
 if(count%2==1){
     plus.style.display="none"
