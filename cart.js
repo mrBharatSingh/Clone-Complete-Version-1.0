@@ -232,7 +232,7 @@ data2.map(function(item, index){
         }
     
     function gotohome() {
-        window.location.href="Index.html";
+        window.location.href="index.html";
     }
 })
 
@@ -242,7 +242,7 @@ btn.setAttribute("id","continueshop")
 document.getElementById("hh").append(btn)
 btn.addEventListener("click",gotohome)
 function gotohome() {
-    window.location.href="Index.html"
+    window.location.href="index.html"
 }
 
 // console.log(netprice)
@@ -302,7 +302,7 @@ function makeDelete(index) {
 }
 // // Home
 document.getElementById("nav2logo").addEventListener("click",function(){
-    window.location.href="Index.html"
+    window.location.href="index.html"
   })
   var add=JSON.parse(localStorage.getItem("address"))
   console.log(add)
