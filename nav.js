@@ -328,3 +328,4 @@ document.getElementById("nav2ContentImg2").addEventListener("click",function(){
   
 })
 
+///dfjdlfj
