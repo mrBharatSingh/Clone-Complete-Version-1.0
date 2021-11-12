@@ -267,6 +267,7 @@ img.setAttribute("id","imgDiv")
 var h2=document.createElement("h2")
 h2.textContent=item.type
 var h3=document.createElement("p")
+h3.id="pText"
 h3.textContent=item.name
 var price=document.createElement("p")
 price.textContent=item.price

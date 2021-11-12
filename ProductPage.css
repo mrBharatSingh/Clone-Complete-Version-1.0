@@ -29,6 +29,11 @@ p {
   line-height: 25px;
   font-weight: normal;
 }
+#pText {
+  width: 200px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+}
 .discount {
   /* position: absolute; */
   bottom: 20px;
