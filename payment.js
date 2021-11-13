@@ -51,7 +51,7 @@ function checkdetails() {
     // Checking card number length
     var cardlength = document.getElementById("cardNumber").value
     var cvv = document.getElementById("ccv").value
-    if (cardlength.length != 12 || cvv.length != 3) alert("Please enter valid credtionals")
+    if (cardlength.length != 16 || cvv.length != 3) alert("Please enter valid credtionals")
 
     else {
         alert("Your order is placed successfully")
@@ -69,7 +69,7 @@ function dcheckdetails() {
     // Checking card number length
 var cardlength=document.getElementById("DebitNumber").value
 var cvv=document.getElementById("Back").value
-if(cvv.length!=3 && cardlength.length!=12) alert("Please enter valid credtionals")
+if(cvv.length!=3 && cardlength.length!=16) alert("Please enter valid credtionals")
 else {
     alert("Your order is placed successfully")
     localStorage.removeItem("cartlist")
